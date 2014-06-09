@@ -1,0 +1,73 @@
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:flash
+de:
+
+#END:cart
+#END:checkout
+#END:flash
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "CHF"
+        precision: 2
+        separator: ""
+        delimiter: "."
+        format:    "%u&nbsp%n"
+#END:currency
+
+#START:errors
+  errors:
+    template:
+      body:        "Fehler in folgendem Feld:"
+      header:       
+        one:       "Ein Fehler verhinderte das Speichern von %{model}"
+        other:     "%{count} Fehler verhinderten das Speichern von %{model}"
+#END:errors
+
+#START:layout
+  layouts:
+    application:
+      title:       "Tragischer Webshop"
+      home:        "Heim"
+      questions:   "Fragen"
+      news:        "Neues"
+      contact:     "Kontakt"
+#END:layout
+
+#START:cart
+  carts:
+    cart:
+      title:       "Einkaufskorb"
+      empty:       "Korb leeren"
+      checkout:    "Abschliessen"
+#END:cart
+
+#START:main
+  store:
+    index:
+      title_html:  "Tragischer Katalog"
+      add_html:    "Zum Einkauskorb hinzufügen"
+#END:main
+
+#START:checkout
+  orders:
+    new:
+      legend:       "Bitte ihre Angaben ausfüllen"
+    form:
+      name:         "Name"
+      address_html: "Adresse"
+      email:        "E-mail"
+      pay_type:     "Zahlungsmethode"
+      pay_prompt_html: "Wählen Sie eine Zahlungsmethode"
+      submit:       "Bestellung abschliessen"
+#END:checkout
+
+#START:flash
+  thanks:          "Vielen Dank für Ihre Bestellung"
+#END:flash
